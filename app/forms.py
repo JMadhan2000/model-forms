@@ -11,6 +11,12 @@ class WebPageForm(forms.ModelForm):
     class Meta():
         model = WebPage
         fields='__all__'
+        #fields=['Name','Url','Email']
+        #exclude=['Name','Url']
+        #labels={'Name':'Na','Url':'U'}
+        #widgets={'Url':forms.PasswordInput}    #url will show the data as pass while writing
+        
+
 
 
 class AccessRecordForm(forms.ModelForm):
